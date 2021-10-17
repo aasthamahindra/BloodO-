@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/sliderThreeRelative"
+        android:background="@drawable/d_slider3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="505dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/three" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sliderThreeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore Updates around you"
+        android:textColor="@color/colorLight"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sliderThreeRelative"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/sliderThreeDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:gravity="center"
+        android:text="Lorem Ipsum is simply dummy text \n of the printing and typesetting"
+        android:textColor="@color/colorLight"
+        android:textSize="18sp"
+        android:layout_below="@id/sliderThreeTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>
