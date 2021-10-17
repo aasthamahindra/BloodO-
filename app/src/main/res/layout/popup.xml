@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Confirm verification code"
+                android:textColor="@color/colorDark"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <com.example.bloodo_.UI.OtpEditText
+                android:id="@+id/et_otp"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cursorVisible="false"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textIsSelectable="false"
+                android:textSize="20sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/okButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_otp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="-27dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTintMode="add"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/custom_loginbtn"
+                android:text="Ok"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/resendBtn"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_otp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="30dp"
+                android:padding="0dp"
+                android:layout_marginRight="-59dp"
+                android:background="@android:color/transparent"
+                android:text="Re-send"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
