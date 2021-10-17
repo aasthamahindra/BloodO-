@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DE2C2C</color>
+    <color name="colorPrimaryDark">#DE2C2C</color>
+    <color name="colorDark">#242C37</color>
+    <color name="darkGray">#767676</color>
+    <color name="colorLight">#FFFFFF</color>
+    <color name="colorFacebook">#4267B2</color>
+</resources>
