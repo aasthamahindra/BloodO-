@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MobileLogin">
+
+    <ImageView
+        android:id="@+id/verifyNumberBackBtn"
+        android:src="@mipmap/backbtn"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/verifyNumberText"
+        android:text="Verify Number"
+        android:textSize="30sp"
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"
+        android:layout_below="@+id/verifyNumberBackBtn"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/pincodeId"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/verifyNumberText"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_loginbtn"
+        android:backgroundTint="#A8A5A5"
+        android:backgroundTintMode="add"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:hint="+91"
+        android:textColor="@color/colorDark" />
+
+    <EditText
+        android:id="@+id/numberId"
+        android:layout_below="@id/verifyNumberText"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/pincodeId"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:backgroundTintMode="add"
+        android:background="@drawable/custom_loginbtn"
+        android:backgroundTint="#A8A5A5"
+        android:hint="Enter your phone number"
+        android:textSize="18sp"
+        android:textColor="@color/colorDark"
+        android:layout_width="280dp"
+        android:layout_height="60dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/getOtp"
+        android:text="Get OTP"
+        android:textColor="@color/colorLight"
+        android:textSize="18sp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_below="@id/pincodeId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_width="350dp"
+        android:background="@drawable/custom_loginbtn"
+        android:backgroundTintMode="add"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
