@@ -34,7 +34,7 @@ public class SplashActivity extends AppCompatActivity {
                     launcherManager.setFirstLaunch(false);
                     startActivity(new Intent(getApplicationContext(), SliderActivity.class));
                 }else {
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                    startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                 }
             }
         }, 2000);

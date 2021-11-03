@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center_vertical"
+    >
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/drawerBtn"
+        android:layout_marginLeft="5dp"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_menu"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="BloodO-"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorLight"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more"/>
+
+</LinearLayout>

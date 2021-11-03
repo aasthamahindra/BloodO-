@@ -71,7 +71,7 @@ public class MobileLogin extends AppCompatActivity {
                     public void onClick(View view) {
                         if (!otpEditText.getText().toString().isEmpty()) {
                             dialog.dismiss();
-                            startActivity(new Intent(MobileLogin.this, MainActivity.class));
+                            startActivity(new Intent(MobileLogin.this, HomeActivity.class));
                             finish();
                         } else {
                             Toast.makeText(MobileLogin.this, "Please enter correct OTP!!", Toast.LENGTH_LONG).show();

@@ -8,12 +8,12 @@
     <ImageView
         android:id="@+id/sliderOneImage"
         android:layout_width="match_parent"
-        android:layout_height="425dp"
+        android:layout_height="350dp"
         android:src="@drawable/one" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="700dp"
         android:layout_below="@id/sliderOneImage"
         android:background="@drawable/d_slider1"
         app:layout_constraintEnd_toEndOf="parent"

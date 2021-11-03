@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/loginImage"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="300dp"
         android:src="@drawable/four"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
