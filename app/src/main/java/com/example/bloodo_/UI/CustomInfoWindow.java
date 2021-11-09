@@ -33,8 +33,8 @@ public class CustomInfoWindow implements GoogleMap.InfoWindowAdapter {
         TextView title = (TextView) view.findViewById(R.id.winTitle);
         title.setText(marker.getTitle());
 
-        //TextView magnitude = (TextView) view.findViewById(R.id.magnitude);
-        //magnitude.setText(marker.getSnippet());
+        TextView bloodGroup = (TextView) view.findViewById(R.id.bloodGroup);
+        bloodGroup.setText(marker.getSnippet());
         return view;
     }
 }
